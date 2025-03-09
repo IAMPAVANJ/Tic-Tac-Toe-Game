@@ -1,26 +1,26 @@
 var reset = document.getElementById("reset")
+let n1 = document.getElementById("b1");
+let n2 = document.getElementById("b2");
+let n3 = document.getElementById("b3");
+let n4 = document.getElementById("b4");
+let n5 = document.getElementById("b5");
+let n6 = document.getElementById("b6");
+let n7 = document.getElementById("b7");
+let n8 = document.getElementById("b8");
+let n9 = document.getElementById("b9");
+let count = 0;
 reset.addEventListener("click",function(){
-    window.location.reload()
+    for(let i=1;i<=9;i++){
+        result.innerHTML = "";
+        document.getElementById("b"+i).innerHTML="";
+        document.getElementById("b"+i).setAttribute('style',"background-color:blanchedalmond");
+        document.getElementById("turn").innerHTML = "Turn Of X"
+        count=0;
+    }
 })
-    var n1 = document.getElementById("b1");
-    var n2 = document.getElementById("b2");
-    var n3 = document.getElementById("b3");
-    var n4 = document.getElementById("b4");
-    var n5 = document.getElementById("b5");
-    var n6 = document.getElementById("b6");
-    var n7 = document.getElementById("b7");
-    var n8 = document.getElementById("b8");
-    var n9 = document.getElementById("b9");
-
-
-   
-
-
-
 
 var player = "x"
 document.getElementById("turn").innerHTML = "Turn Of X"
-let count = 0;
 function add(cell){
     
     if(cell.innerHTML!==""){
